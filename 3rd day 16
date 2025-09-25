@@ -1,0 +1,10 @@
+Sanjay wants to learn the calculation of integer digits.could you please help him to implements the sum of digits in programming. Notes:- - If the integer is 45,separate the each digits (4+5) the output is 9.
+n = int(input())
+
+if n > 9 and n < 100:   # check for two-digit number
+    digit1 = n // 10
+    digit2 = n % 10
+    result = digit1 + digit2
+    print(f"Sum of Digit {n} is {result:03d}")
+else:
+    print("Invalid Input")
